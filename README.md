@@ -70,4 +70,27 @@
 ---
 ## Images showing number of values inserted into the table when the script is running
 <img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
-<img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
+<img src="images/image_2_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
+---
+## Images to see the inserted values
+<img src="images/image_1_when_values_are_inserted_into_the_table.png" alt="Image to see the values that are inserted" style="width: 100%;">
+<img src="images/image_2_when_values_are_inserted_into_the_table.png" alt="Image to see the values that are inserted" style="width: 100%;">
+---
+## Images to run the script and see the output result of tables being created
+<img src="images/how_to_run_script_to_create_tables.png" alt="Image to run the script" style="width: 100%;"> 
+---
+## Images to see the created tables
+<img src="images/created_tables_for_dayl.png" alt="tables in the console" style="width: 100%">
+<img src="images/tables_created.png" alt="Image to see the values that are inserted" style="width: 100%;">
+---
+## Images showing the progress of the values of being inserted
+<img src="images/script_showing_the_progress_of_the_dates_being_inserted.png" alt="" style="widht: 100%">
+<img src="images/script_2_showing_the_progress_of_the_dates_being_inserted.png" alt="" style="widht: 100%">
+---
+## Images showing the dates inserted to the tables
+<img src="images/dates_1_inserted_to_each_table.png" alt="" style="widht: 100%">
+<img src="images/dates_2_inserted_to_each_table.png" alt="" style="width: 100%">
+---
+## Images showing the progress of batch inserts in the tables. Please don't give high batch sizes since the size of the request that you can send is limited. So, if the size of the batch is too high then you will get errors.
+<img src="images/batch_insertion_progress_1.png" alt="" style="widht: 100%">
+<img src="images/batch_insertion_progress_2.png" alt="" style="width: 100%">
