@@ -68,6 +68,45 @@
 3. Check that the values are being updated in the bigquery UI console.
 
 ---
+## SQL Queries that can be useful when running bigquery
+```
+### Create a new empty table with the schema of the old table. Testing_table_3 is the new table and will have the same schema as testing_table_2
+CREATE TABLE `climate-data-modeling.python_creating_dataset.testing_table_3`
+AS
+SELECT *
+FROM `climate-data-modeling.python_creating_dataset.testing_table_2`
+WHERE 1 = 0;
+
+## Delete a table
+DROP TABLE `climate-data-modeling.python_creating_dataset.testing_table_3_16` 
+
+## See the schema of a table
+SELECT
+  column_name,
+  data_type
+FROM
+  `climate-data-modeling.python_creating_dataset.INFORMATION_SCHEMA.COLUMNS`
+WHERE
+  table_name = 'testing_table_3'
+ORDER BY
+  ordinal_position;
+
+
+## See the values of a table
+SELECT * FROM `climate-data-modeling.climate_data.daylength` LIMIT 1000
+
+## See the length of the nested and repeated fields. Here dayls is a Struct of repeated values
+SELECT ARRAY_LENGTH(dayls) AS num_values
+FROM `climate-data-modeling.climate_data.daylength_data`
+
+## Insert the values into the table manually.
+UPDATE `climate-data-modeling.python_creating_dataset.testing_table_3`
+                                SET dayls = ARRAY_CONCAT(dayls, [STRUCT(-100.0 AS x, -100.0 AS y, 300.00 AS dayl)])
+                                WHERE date = '1997-01-01T12:00:00'
+
+## These queries can be modified as per the requirement when you are testing.
+```
+---
 ## Images showing number of values inserted into the table when the script is running
 <img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
 <img src="images/image_2_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
