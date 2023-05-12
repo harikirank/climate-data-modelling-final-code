@@ -1,3 +1,6 @@
+# Climate Data Modelling - Data Engineering
+Welcome to the project Climate Data Modelling! Our project aims to solve the problem of extracting the data from public data sources and storing it inside a bigquery data warehouse. We first download the data into the data lake using bash scripts and then we will use the python scripts to read the data from the data lake and load them into the data warehouse. This data can then be used for solving the climatology problems using deep learning approaches.
+
 ### To Create a Virtual Environment Run these commands in the linux shell
 1. `python3 -m venv venv`
 
