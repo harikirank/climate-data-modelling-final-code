@@ -66,3 +66,7 @@
 1. Please wait for 30 to minutes because once you insert rows into the table bigquery doesn't support updates or deletes to that rows for sometime. So, please wait for a few minutes and start running the scripts located at `insert_x_y_climate_values_into_tables`.
 2. Run the script
 3. Check that the values are being updated in the bigquery UI console.
+
+---
+## Images showing number of values inserted into the table when the script is running
+<img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
