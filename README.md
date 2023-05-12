@@ -45,3 +45,24 @@
 11. Your Bucket and the folders inside these buckets are now created.
 12. The important thing to remember is that these bucketnames will be used in our code. So, if you want to change these names, then change the names in the code as well.
 
+---
+## How to load data into cloud storage buckets?
+1. To load the files for a specific value like tmin, tmax etc... run the corresponding files located in `load_nc_files_to_data_lake`
+2. To Download all the files run `download_all_files.sh` located in `load_nc_files_to_data_lake`
+
+---
+## How to create tables in bigquery?
+1. To create empty tables run the corresponding files in `create_empty_tables_with_schemas`
+2. If you want to change the schema of any of the tables please refer to this code and modify it here.
+3. To see if tables were created successfully go to cloud console -> Bigquery. Then at the side panel find your datset and the tables that were created when you ran these scripts.
+
+---
+## How to insert dates into the tables created above?
+1. Run the corresponding files located at `insert_rows_with_only_dates_in_tables/` to insert the date values into the bigquery table.
+2. You can check that the values are inserted using the bigquery UI available on google cloud console.
+
+---
+## How to insert the x,y and the measured values into the above tables?
+1. Please wait for 30 to minutes because once you insert rows into the table bigquery doesn't support updates or deletes to that rows for sometime. So, please wait for a few minutes and start running the scripts located at `insert_x_y_climate_values_into_tables`.
+2. Run the script
+3. Check that the values are being updated in the bigquery UI console.
