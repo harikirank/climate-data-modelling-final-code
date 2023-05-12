@@ -70,3 +70,4 @@
 ---
 ## Images showing number of values inserted into the table when the script is running
 <img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
+<img src="images/image_1_when_values_are_being_inserted_with_python_script.png" alt="Image to see the changes in the values being inserted while running the script" style="width: 100%;">
