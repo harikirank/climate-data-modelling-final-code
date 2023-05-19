@@ -74,7 +74,7 @@ Welcome to the project Climate Data Modelling! Our project aims to solve the pro
 
 ---
 ## SQL Queries that can be useful when running bigquery
-```
+```SQL
 ### Create a new empty table with the schema of the old table. Testing_table_3 is the new table and will have the same schema as testing_table_2
 CREATE TABLE `climate-data-modeling.python_creating_dataset.testing_table_3`
 AS
